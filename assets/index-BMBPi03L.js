@@ -111,6 +111,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     background-image: url(${e=>e.backgroundMobile});
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     min-height: 100vh;
     min-width: 100vw;
@@ -132,6 +133,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 
     @media (min-width: 769px) {
         background-image: url(${e=>e.backgroundDesktop});
+        background-position: center;
+        background-size: cover;
         flex-direction: row;
     }
 `,yc=cc.h4`
