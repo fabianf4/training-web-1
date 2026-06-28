@@ -14,6 +14,7 @@ export const Container = styled.div`
     background-image: url(${(props) => props.backgroundMobile});
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 
     min-height: 100vh;
     min-width: 100vw;
@@ -35,6 +36,8 @@ export const Container = styled.div`
 
     @media (min-width: 769px) {
         background-image: url(${(props) => props.backgroundDesktop});
+        background-position: center;
+        background-size: cover;
         flex-direction: row;
     }
 `

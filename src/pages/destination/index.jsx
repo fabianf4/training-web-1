@@ -19,16 +19,16 @@ export default function Destination() {
 
     return (
         <Container
-            backgroundMobile="/SpaceTourismWebsite/destination/background-destination-mobile.jpg"
-            backgroundTablet="/SpaceTourismWebsite/destination/background-destination-tablet.jpg"
-            backgroundDesktop="/SpaceTourismWebsite/destination/background-destination-desktop.jpg"
+            backgroundMobile={`${import.meta.env.BASE_URL}destination/background-destination-mobile.jpg`}
+            backgroundTablet={`${import.meta.env.BASE_URL}destination/background-destination-tablet.jpg`}
+            backgroundDesktop={`${import.meta.env.BASE_URL}destination/background-destination-desktop.jpg`}
         >
             <Container3>
                 <SubTitle1>01 PICK YOUR DESTINATION</SubTitle1>
 
                 <div>
                     <Image
-                        src={`/SpaceTourismWebsite/${destination.images.png}`}
+                        src={`${import.meta.env.BASE_URL}${destination.images.png}`}
                         alt={destination.name}
                     />
                 </div>

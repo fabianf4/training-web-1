@@ -4,9 +4,9 @@ export default function Index() {
     return (
         <>
             <Container
-            backgroundMobile="/SpaceTourismWebsite/home/background-home-mobile.jpg"
-            backgroundTablet="/SpaceTourismWebsite/home/background-home-tablet.jpg"
-            backgroundDesktop="/SpaceTourismWebsite/home/background-home-desktop.jpg">
+            backgroundMobile={`${import.meta.env.BASE_URL}home/background-home-mobile.jpg`}
+            backgroundTablet={`${import.meta.env.BASE_URL}home/background-home-tablet.jpg`}
+            backgroundDesktop={`${import.meta.env.BASE_URL}home/background-home-desktop.jpg`}>
                 <Container3>
                     <SubTitle1>So, you want to travel to</SubTitle1>
                     <Title>Space</Title>
